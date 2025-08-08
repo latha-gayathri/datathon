@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Interactive Demos</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #6C63FF;
+            --secondary: #4D44DB;
+            --accent: #FF6584;
+            --dark: #2D3748;
+            --light: #F7FAFC;
+        }
+        
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Montserrat', sans-serif;
+            background-color: #F9F9FF;
+            color: var(--dark);
+            line-height: 1.6;
+        }
+        
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding: 2rem 5%;
+            background: linear-gradient(135deg, #6C63FF 0%, #4D44DB 100%);
+            color: white;
+            box-shadow: 0 4px 20px rgba(108, 99, 255, 0.3);
+        }
+        
+        .college-info {
+            text-align: right;
+            margin-left: auto;
+            max-width: 50%;
+        }
+        
+        .college-name {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            color: white;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+        }
+        
+        .college-description {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            margin-top: 0;
+        }
+        
+        .main-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 3rem;
+            color: var(--primary);
+            text-align: center;
+            margin: 2rem 0 1rem;
+        }
+        
+        .subtitle {
+            text-align: center;
+            color: var(--dark);
+            margin-bottom: 3rem;
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 0 2rem;
+        }
+        
+        .demo-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            padding: 0 5%;
+            margin-bottom: 4rem;
+        }
+        
+        .demo-card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .demo-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.12);
+        }
+        
+        .demo-card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-bottom: 4px solid var(--primary);
+        }
+        
+        .demo-content {
+            padding: 1.5rem;
+        }
+        
+        .demo-title {
+            font-family: 'Playfair Display', serif;
+            color: var(--secondary);
+            margin-top: 0;
+            font-size: 1.5rem;
+        }
+        
+        .demo-description {
+            color: #4A5568;
+            margin-bottom: 1.5rem;
+        }
+        
+        .demo-button {
+            display: inline-block;
+            background: var(--primary);
+            color: white;
+            padding: 0.8rem 1.5rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        
+        .demo-button:hover {
+            background: var(--secondary);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(108, 99, 255, 0.4);
+        }
+        
+        footer {
+            background: var(--dark);
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+        }
+        
+        .footer-text {
+            opacity: 0.8;
+            font-size: 0.9rem;
+        }
+        
+        @media (max-width: 768px) {
+            .header-container {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .college-info {
+                text-align: center;
+                margin: 1rem auto 0;
+                max-width: 100%;
+            }
+            
+            .main-title {
+                font-size: 2.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header-container">
+        <div class="college-info">
+            <h1 class="college-name">GMRIT</h1>
+            <p class="college-description">Where innovation meets education - Preparing tomorrow's leaders through interactive learning</p>
+        </div>
+    </div>
+    
+    <h1 class="main-title">Interactive Learning Demos</h1>
+    <p class="subtitle">Explore our collection of real-time interactive demonstrations designed to enhance your understanding of complex concepts through visualization.</p>
+    
+    <div class="demo-container">
+        <div class="demo-card">
+            <img src="https://images.unsplash.com/photo-1581094271901-8022df4466f9?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Chemistry Demo">
+            <div class="demo-content">
+                <h3 class="demo-title">Engeneering concepts</h3>
+                <p class="demo-description">Visualize molecular interactions and reaction pathways in real-time with our chemistry simulator.</p>
+                <a href="#" class="demo-button">View Demo</a>
+            </div>
+        </div>
+        
+        <div class="demo-card">
+            <img src="https://images.unsplash.com/photo-1551269901-5c5e14c25df7?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Physics Demo">
+            <div class="demo-content">
+                <h3 class="demo-title">Library</h3>
+                <p class="demo-description">Experiment with gravity, motion, and forces through interactive physics models.</p>
+                <a href="#" class="demo-button">View Demo</a>
+            </div>
+        </div>
+        
+        <div class="demo-card">
+            <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Biology Demo">
+            <div class="demo-content">
+                <h3 class="demo-title">Software Systems</h3>
+                <p class="demo-description">Explore cellular processes and organism systems with our 3D biology visualizer.</p>
+                <a href="#" class="demo-button">View Demo</a>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <p class="footer-text">© 2023 Prestige University Interactive Learning Center | All Rights Reserved</p>
+    </footer>
+</body>
+</html>
